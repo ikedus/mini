@@ -21,6 +21,15 @@ class Session
 		}
 	}
 
+	public static function getAndDestroy($key)
+	{
+		if (isset($_SESSION[$key])) {
+			$return = $_SESSION[$key];
+			$_SESSION[$key] = null;
+			return  $return;
+		}
+	}
+
 	public static function destroy()
 	{
 		session_destroy();

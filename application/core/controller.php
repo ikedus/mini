@@ -17,6 +17,8 @@ class Controller
      */
     function __construct()
     {
+        Session::init();
+
         $this->openDatabaseConnection();
         
 

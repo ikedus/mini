@@ -79,6 +79,24 @@ body {
     color: #fff;
 }
 
+.feedback {
+    border: 1px solid black;
+    color: black;
+    padding: 20px;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.feedback.error {
+    border: 1px solid red;
+    color: red;
+}
+
+.feedback.succes {
+    border: 1px solid green;
+    color: green;
+}
+
 /* input boxes */
 /* html5 reset. this is necessary to properly align input fields in html5 */
 input, select, textarea {
@@ -172,3 +190,4 @@ a.facebook-register-button:hover {
     width: 300px;
     vertical-align: top;
 }
+

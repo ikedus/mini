@@ -26,6 +26,14 @@ class View
         }
     }
 
+
+    public function renderFeedbackMessages($value='')
+    {
+        require VIEW . '_templates/feedback.php';
+        Session::set('feedback_positive', null);
+        Session::set('feedback_negative', null);
+    }
+
     /**
      * Checks if the passed string is the currently active controller.
      * Useful for handling the navigation's active/non-active link.
